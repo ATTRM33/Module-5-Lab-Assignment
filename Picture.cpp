@@ -4,8 +4,8 @@
 
 
 std::ostream& operator<<(std::ostream& strm, Picture& obj) {
-    for (const auto& row : obj.colors) {
-        for (const auto& color : row) {
+    for (auto& row : obj.colors) {
+        for (auto& color : row) {
             strm << color << " ";
         }
         strm << std::endl;
