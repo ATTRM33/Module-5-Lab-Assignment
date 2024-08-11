@@ -6,16 +6,16 @@
 
 class Picture
 {private:
-	
+	int width;
+	int height;
 	std::vector<std::vector<Color>> colors;
 
 public:
-	Picture(int width, int height) : colors(height, std::vector<Color>(width, Color::white)) {}
+	Picture(const std::string& filename);
 	void setPixel(int x, int y, Color& c) {
 		colors[y][x] = c;}
-	int getHeight() { return colors.size(); }
-	int getWidth() { return colors[0].size(); }
-	void readFile(Picture& picture);
+	int getHeight() { return height; }
+	int getWidth() { return width; }
 	friend std::ostream& operator<<(std::ostream& strm, Picture& obj);
 };
 

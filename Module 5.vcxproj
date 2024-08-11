@@ -128,10 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Color.h" />
+    <ClInclude Include="ColorExceptions.h" />
     <ClInclude Include="Picture.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Color.cpp" />
+    <ClCompile Include="ColorExceptions.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Picture.cpp" />
   </ItemGroup>

@@ -11,6 +11,7 @@ private:
 	int blue;
 
 public:
+	Color() {}
 	Color(int r, int g, int b) : red(r), green(g), blue(b) {}
 	static Color red;
 	static Color green;
